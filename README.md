@@ -1,6 +1,6 @@
-# 🤖 Helix AI - Recruiting Outreach Assistant
+# 🤖 Recruit AI - Recruiting Assistant
 
-Helix AI is an AI-driven recruiting outreach assistant that helps users craft personalized outreach sequences. It engages in a back-and-forth conversation to refine messaging, structure, and tone. Built with **Flask, OpenAI API, PostgreSQL, and CrewAI**, this application dynamically updates the sequence based on user interactions.
+Recruit AI is an AI-driven recruiting outreach assistant that helps users craft personalized outreach sequences. It engages in a back-and-forth conversation to refine messaging, structure, and tone. Built with **Flask, OpenAI API, PostgreSQL, and CrewAI**, this application dynamically updates the sequence based on user interactions.
 
 ---
 
