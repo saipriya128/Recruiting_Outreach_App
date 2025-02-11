@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 # Load environment variables
 load_dotenv()
 
-client = openai.OpenAI(api_key="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")
+client = openai.OpenAI(api_key="sk-proj-#")
 
 def chat_with_openai(user_input):
     """Processes chat input and returns AI response using OpenAI API."""
