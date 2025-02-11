@@ -32,9 +32,3 @@ def home():
     return jsonify({"message": "Welcome to the Recruiting Outreach AI API!"}), 200
 
 # Ensure API Key is Set
-if not os.getenv("OPENAI_API_KEY"):
-    raise ValueError("❌ OPENAI_API_KEY is missing! Set it in the .env file.")
-
-if __name__ == "__main__":
-    print("✅ Flask app is running at http://127.0.0.1:5000/")
-    app.run(debug=True)
