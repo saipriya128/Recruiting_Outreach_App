@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# 🤖 Helix AI - Recruiting Outreach Assistant
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Helix AI is an AI-driven recruiting outreach assistant that helps users craft personalized outreach sequences. It engages in a back-and-forth conversation to refine messaging, structure, and tone. Built with **Flask, OpenAI API, PostgreSQL, and CrewAI**, this application dynamically updates the sequence based on user interactions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- **Interactive Chat**: AI-driven conversation to guide users in creating effective outreach sequences.
+- **Dynamic Updates**: AI continuously refines the sequence based on user input.
+- **Flask Backend**: Handles chat processing and API integration.
+- **PostgreSQL Database**: Stores user preferences and outreach sequences.
+- **Modern UI**: Developed with **React + TypeScript + Vite** for an elegant, responsive experience.
+- **CrewAI Integration**: AI-powered agent (`Helix`) enhances user experience with smart interactions.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Installation & Setup
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🔹 1️⃣ Clone the Repository
+sh
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
+cd YOUR_REPO_NAME
+Setup the Backend (Flask + PostgreSQL)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Create and activate a virtual environment:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+python -m venv venv
+source venv/bin/activate  # Mac/Linux
+venv\Scripts\activate     # Windows
+
+Set up environment variables: Create a .env file in the backend/ directory and add:
+
+OPENAI_API_KEY=your-openai-api-key
+DATABASE_URL=postgresql://username:password@localhost/recruiting_db
+
+Run the Flask backend:
+
+python app.py
+
+## Setup the Frontend (React + Vite)
+
+Navigate to frontend directory:
+
+cd frontend
+
+Install dependencies:
+
+npm install
+
+Start the frontend:
+
+npm run dev
