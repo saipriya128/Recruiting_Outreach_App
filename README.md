@@ -20,19 +20,24 @@ Helix AI is an AI-driven recruiting outreach assistant that helps users craft pe
 ### 🔹 1️⃣ Clone the Repository
 sh
 
-git clone https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/saipriya128/Recruiting_Outreach_App.git
+
+cd Recruiting_Outreach_App
+
 Setup the Backend (Flask + PostgreSQL)
 
 Create and activate a virtual environment:
 
 python -m venv venv
+
 source venv/bin/activate  # Mac/Linux
+
 venv\Scripts\activate     # Windows
 
 Set up environment variables: Create a .env file in the backend/ directory and add:
 
 OPENAI_API_KEY=your-openai-api-key
+
 DATABASE_URL=postgresql://username:password@localhost/recruiting_db
 
 Run the Flask backend:
